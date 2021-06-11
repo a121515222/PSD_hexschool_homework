@@ -95,23 +95,46 @@ ul.sociallink{
     color: #2bbd7e;
     text-decoration: none;
     padding:0 5px 0 5px;
+    display:bolok;
 }
 .banner{
+    background:url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png) no-repeat;
     margin-bottom: 50px;
+    width: 1000px;
+    height: 385px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.banner h1{
+    color:white;
+    
+    font-size: 28px;
+    padding:10px 0 10px 20px;
+}
+.banner_tittle1{
+    background: rgb(0, 0, 0, 0.4);
+    padding-top:20px;
+}
+.banner_tittle2{
+    background: rgb(0, 0, 0, 0.4);
+    padding-bottom:20px;
 }
 .productlist{
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom:60px;
     padding:0 20px 0 20px;
 }
-.productlist li{
+.productlist_li{
     width: 280px;
     border:0 1px 1px 1px solid black;
     border-radius:3px;
     box-shadow:0 2px 2px black ;
-    padding:0 10px 0 10px;
+    padding:0 10px 20px 10px;
     
 }
 .product_picture{
@@ -125,7 +148,10 @@ ul.sociallink{
     font-weight: bold;
     margin-bottom: 10px;
 }
-.productlist p{
+.productlist ul{
+    padding-left:10px;
+}
+.productlist ul li{
     font-size: 12px;
 }
 .table_compare_with_title h2{
@@ -180,7 +206,7 @@ ul.sociallink{
     color:white;
     margin-bottom: 5px;
 }
-textarea{
+.gust_textarea{
     width: 460px;
     height: 250px;
     border-radius: 3px;
@@ -191,16 +217,20 @@ textarea{
     border-radius: 3px;
     margin-bottom: 15px;
 }
+.li_submitbutton{
+    display:flex;
+    justify-content: flex-end;
+}
 input.submit_button{
     width: 70px;
     color:white;
     background: #08cd9b;
     border:#08cd9b solid 1px ;
-    margin:5px 0 0 395px;
 }
 input.submit_button:hover{
     background:red;
     border:red solid 1px;
+    cursor: pointer;
 }
 .footer_logo_and_connet_info{
     margin-bottom: 50px;

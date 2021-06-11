@@ -25,42 +25,50 @@
             <a href="#"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="twitter logo">追隨我們</a></li>
     </ul>
 
-    <ul class="hexlogo_and_menulink">
-        <li>
+    <div class="hexlogo_and_menulink">
+        
             <a href="#" class="hexlschoollogo_lightgreen"><h1>Hex school</h1></a>
-        </li>
-        <li>
+        
             <ul class="menulink">
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">產品介紹</a></li>
                 <li><a href="#">聯絡我們</a></li>
             </ul>
-        </li>
-    </ul>
+        
+    </div>
     
     
 <div class="banner">
-    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png" alt="Hexschool banner">
+    <div class="banner_tittle1">
+        <h1>六角學院</h1>
+    </div>
+    <div class="banner_tittle2">
+        <h1>讓你奠定良好的前端基礎</h1>
+    </div>
+     
 </div>
     <ul class="productlist">
-        <li>
+        <li class="productlist_li">
             <div class="product_picture"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="Html5 picture"></div>
              <h3>Html 5 基礎教學</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam non fugit unde, commodi libero ab tempora modi voluptatum tempore eos.</p>
         </li>
-        <li>
+        <li class="productlist_li">
             <div class="product_picture"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWD Picture"></div>
             <h3>響應式網站設計</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam non fugit unde, commodi libero ab tempora modi voluptatum tempore eos.</p>
         </li>
-        <li>
+        <li class="productlist_li">
             <div class="product_picture"><img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery Picture"></div>
             <h3>jQuery 實戰教學</h3>
             <p>Lorem ipsum dolor sit.um dolor sit, ametum dolor sit, amet</p>
-            <p>．Lorem ipsum dolor sit amet.</p>
-            <p>．Lorem ipsum dolor sit amet.</p>
-            <p>．Lorem ipsum dolor sit amet.</p>
-            <p>．Lorem ipsum dolor sit amet.</p>
+            <ul style="list-style:disc">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+
 
         </li>
     </ul>
@@ -117,15 +125,18 @@
     <label for="Idgustinfo" class="gustinfo">歡迎留下您的資料</label>
     <form action="index.html">
         <ul class="textarea_andgustinfolist">
-            <li> <textarea name="gustinfo" id="Idgustinfo" cols="30" rows="10"></textarea> </li>
+            <li> <textarea class="gust_textarea" name="gustinfo" id="Idgustinfo" ></textarea> </li>
             <li>
                 <label for="Idgustname">姓名</label>
                 <input type="text" id="Idgustname" placeholder="請輸入姓名">
                 <label for="Idtele">電話</label>
-                <input type="text" id="Idtele" placeholder="請輸入電話">
+                <input type="tel" id="Idtele" placeholder="請輸入電話">
                 <label for="Idemail">信箱</label>
                 <input type="email" id="Idemail" placeholder="請輸入email">
-                <input class="submit_button" type="submit" value="送出">
+                <div class="li_submitbutton">
+                    <input class="submit_button" type="submit" value="送出">
+                </div>
+                
             </li>
         </ul>
     </form>
